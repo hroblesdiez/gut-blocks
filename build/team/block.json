@@ -1,0 +1,66 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "blocks/team",
+  "version": "0.1.0",
+  "title": "Team Block",
+  "category": "gut-blocks",
+  "icon": "admin-users",
+  "description": "A Gutenberg block to show info about your team",
+  "supports": {
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "html": true,
+    "align": true
+  },
+  "attributes": {
+    "showBio": {
+      "type": "boolean",
+      "default": true
+    },
+    "showRole": {
+      "type": "boolean",
+      "default": true
+    },
+    "nameTextColor": {
+      "type": "string",
+      "default": "#da9d40"
+    },
+    "roleTextColor": {
+      "type": "string",
+      "default": "#000"
+    },
+    "bioTextColor": {
+      "type": "string",
+      "default": "#000"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "nameFontSize": {
+      "type": "string",
+      "default": "1.45em"
+    }
+  },
+  "textdomain": "gut-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
